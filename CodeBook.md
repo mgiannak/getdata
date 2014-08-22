@@ -1,7 +1,7 @@
 #melted_data R dataset
 ##ActivityLabel
-*The activity during which the measures were taken, as defined in the 'activity_labels.txt' file of the original dataset.
-**Possible Values : WALKING,WALKING_UPSTAIRS, WALKING_DOWNSTAIRS,SITTING,STANDING,LAYING
+* The activity during which the measures were taken, as defined in the 'activity_labels.txt' file of the original dataset.
+** Possible Values : WALKING,WALKING_UPSTAIRS, WALKING_DOWNSTAIRS,SITTING,STANDING,LAYING
 
 ##Subject
 *The id of the subject wearing the sensors when the measures were taken.
