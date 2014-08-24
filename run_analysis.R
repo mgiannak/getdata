@@ -30,6 +30,7 @@ filtered_data_2 <- cbind(subject_merged,filtered_data_1)
 
 activity_labels <- read.csv("activity_labels.txt",sep="",header=FALSE)
 colnames(activity_labels) <- c("ActivityID","ActivityLabel")
+activity_labels$ActivityLabel <- tolower(activity_labels$ActivityLabel)
 
 final_data <- merge(activity_labels,filtered_data_2,by.x="ActivityID",by.y="Activity")
 #remove "ActivityID column"

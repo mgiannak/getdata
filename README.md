@@ -18,3 +18,24 @@ Zip file content must be in the same directory as the 'run_analysis.R' file (hen
 This R script produces 
 - a R dataset named 'melted_data' which fulfills the project's aim up to point 4. 
 - a R dataset named 'tidy_data' and a 'tidydata.txt' file that fullfill the project's aim up to point 5.
+
+##Script Process
+- load libraries plyr and reshape2
+- load raw data from test and train folders
+- merge test and train datasets
+- load measures names
+- insert measures names in merged dataset
+- filter merged dataset to keep only measures with "mean()" or "std()" in the name
+- load raw activity data from test and train folders
+- merge raw activity data
+- merge measures with activity
+- load raw subjects data from test and train folders
+- merge subject data
+- merge subject data with measures-activity
+- load activity labels
+- modify activity labels to lower case
+- merge activity labels with measures-activity-subject data
+- remove activity id (keep only label)
+- reformat measure name for easier reading (and follow conventions)
+- reshape data so have one measure per row
+- make a crosstab of data to have a mean value for each activity-subject-measure
